@@ -1,0 +1,34 @@
+<div class="container-fluid py-4">
+  <div class="row">
+    <div class="row mt-4">
+      <div class="col-lg-7 mb-lg-0 mb-4">
+        <div class="card z-index-2 h-100">
+          <div class="card-header pb-0 pt-3 bg-transparent">
+            <h4>REGISTRAR Equipos:</h4>
+            <div class="card-body">
+              <form action="/guardarEquipos" method="post">
+              <div class="form-group">
+                <input type="String" class="form-control " name="equipo" placeholder="Nombre del equipo">
+              </div>
+              <div class="form-group">
+                <input type="String" class="form-control" name="liga" placeholder="liga">
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" name="numerosdeestrellas" placeholder="numeros de estrellas">
+              </div>
+               <div class="form-group">
+                <input type="Number" class="form-control" name="goles" placeholder="goles">
+              </div>
+              
+              <button class="btn btn-primary btn-block">
+                Registrar 
+              </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

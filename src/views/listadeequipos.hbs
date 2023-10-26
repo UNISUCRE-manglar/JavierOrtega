@@ -1,0 +1,50 @@
+
+<div class="container-fluid py-4">
+  <div class="row">
+    <div class="row mt-4">
+      <div class="col-lg-7 mb-lg-0 mb-4">
+        <div class="card z-index-2 h-100">
+          <div class="card-header pb-0 pt-3 bg-transparent">
+            <html>
+                <body>
+                    <h1>LISTA DE EQUIPOS</h1>
+                    <div class="input-group mb-3">
+                        <table id="regTable" class="table table-striped table-bordered" style="width: 100%;">
+                          <thead>
+                            <tr>
+                              <th scope="col">equipo</th>
+                              <th scope="col">liga</th>
+                              <th scope="col">numerosdeestrellas</th>
+                              <th scope="col">goles</th>
+                              <th scope="col">Editar</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {{#each listarequipos}}
+                            <tr>
+                              <td>{{equipo}}</td>
+                              <td>{{liga}}</td>
+                              <td>{{numerosdeestrellas}}</td>
+                              <td>{{goles}}</td>
+                              <td><a href="#" class="btn btn-success">Editar</a></td>
+                            </tr>
+                            {{else}}
+                            <div class="card mx-auto">
+                              <div class="card-body">
+                                <h1>HOLA {{user.name}}</h1>
+                                <p class="lead">Crea y adiciona tu primer sensor</p>
+                                <a href="/registrarEquipos" class="btn btn-success btn-block">Adicionar</a>
+                              </div>
+                            </div>
+                            {{/each}}
+                          </tbody>
+                        </table>
+                    </div>
+                </body>
+            </html>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
